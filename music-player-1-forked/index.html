@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- desktop first approach is used for the same. -->
+    <link rel="stylesheet" type="text/css" href="First-page-responsive.css" />
+    <!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Static Template</title>
+  </head>
+
+  <body>
+    <nav class="navigation-bar">
+      <!-- This div has the logo of the website -->
+      <div class="title-combo">
+        <div class="website-logo">
+          <i class="fa fa-headphones" aria-hidden="true"></i>
+        </div>
+        <div class="website-name">
+          <h2>
+            Tunes
+          </h2>
+        </div>
+      </div>
+
+      <!-- this div contains the animated favourites -->
+      <div class="favs">
+        <h4>Favourites</h4>
+      </div>
+
+      <!-- this is for the search bar -->
+      <div class="search-bar">
+        <div>
+          <!-- magnifying glass- search icon -->
+          <i class="fas fa-search search-ico"></i>
+        </div>
+        <input type="text" name="search" placeholder="Search" />
+        <div>
+          <!-- mic icon -->
+          <i class="fas fa-microphone mic-ico"></i>
+        </div>
+      </div>
+      <!-- this is for notification bell -->
+      <div class="notification-bell">
+        <i class="fa fa-bell" aria-hidden="true"></i>
+      </div>
+      <!-- this is for profile picture -->
+      <div class="profile-picture">
+        <img
+          src="https://scontent.fbom6-1.fna.fbcdn.net/v/t39.30808-6/268929396_1318866695252520_678442374266360189_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=U_ndrT1CQSQAX9IDTkM&_nc_ht=scontent.fbom6-1.fna&oh=00_AfDTv6u27ZD4Lsh0nAE2I47u7rj3e5OhC8rAyocVJPlgYg&oe=63CAC9DC"
+        />
+      </div>
+    </nav>
+
+    <!-- this div is the container which is divided in two sections -->
+    <main>
+      <!-- this aside section 1 is the left side of website -->
+      <aside class="aside section-1">
+        <div class="outer-carousel">
+          <div class="carousel">
+            <!-- these are 3 img in the carousel -->
+            <img
+              src="https://a10.gaanacdn.com/gn_pl_img/playlists/oAJbDElKnL/JbDEDR0lKn/size_l_1669622820.webp"
+            />
+            <img
+              src="https://a10.gaanacdn.com/gn_pl_img/playlists/10q3Zj1352/q3Z5PPXnK5/size_l_1657259792.webp"
+            />
+            <img
+              src="https://a10.gaanacdn.com/gn_pl_img/playlists/0wrb4kNWLg/rb4qAqpLKL/size_l_1656391385.webp"
+            />
+          </div>
+        </div>
+
+        <!-- this is the latest release section -->
+        <div class="latest-release">
+          <h1 style="margin-bottom: 12px;">Latest Release</h1>
+          <!-- this is the content of the latest release section 
+            it will contain the "cards" -->
+          <div class="latest-release-content">
+            <!-- First card -->
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img
+                  src="https://djsathi.me/siteuploads/thumb/sft103/51477_5.jpg"
+                />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i
+                    class="fas fa-play"
+                    style="
+                      width: 30%;
+                      height: 40%;
+                      margin-top: 13%;
+                      display: inline-block;
+                    "
+                  ></i>
+                </div>
+              </div>
+              <!-- it will contain the name and date of release of the song -->
+              <div class="song-description">
+                <h3>
+                  Ghode Pe Sawar
+                </h3>
+                <p>
+                  Dec , 2022
+                </p>
+              </div>
+
+              <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+              <div class="options">
+                <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single-Playlist-Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <!-- duration  of song -->
+                <p>3:35</p>
+              </div>
+            </div>
+
+            <!-- Second card -->
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img
+                  src="https://djsathi.me/siteuploads/thumb/sft103/51477_5.jpg"
+                />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i
+                    class="fas fa-play"
+                    style="
+                      width: 30%;
+                      height: 40%;
+                      margin-top: 13%;
+                      display: inline-block;
+                    "
+                  ></i>
+                </div>
+              </div>
+              <!-- it will contain the name and date of release of the song -->
+              <div class="song-description">
+                <h3>
+                  Ghode Pe Sawar
+                </h3>
+                <p>
+                  Dec , 2022
+                </p>
+              </div>
+
+              <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+              <div class="options">
+                <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single-Playlist-Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <!-- duration  of song -->
+                <p>3:35</p>
+              </div>
+            </div>
+
+            <!-- Third card -->
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img
+                  src="https://djsathi.me/siteuploads/thumb/sft103/51477_5.jpg"
+                />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i
+                    class="fas fa-play"
+                    style="
+                      width: 30%;
+                      height: 40%;
+                      margin-top: 13%;
+                      display: inline-block;
+                    "
+                  ></i>
+                </div>
+              </div>
+              <!-- it will contain the name and date of release of the song -->
+              <div class="song-description">
+                <h3>
+                  Ghode Pe Sawar
+                </h3>
+                <p>
+                  Dec , 2022
+                </p>
+              </div>
+
+              <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+              <div class="options">
+                <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single-Playlist-Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <!-- duration  of song -->
+                <p>3:35</p>
+              </div>
+            </div>
+
+            <!-- Fourth card -->
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img
+                  src="https://djsathi.me/siteuploads/thumb/sft103/51477_5.jpg"
+                />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i
+                    class="fas fa-play"
+                    style="
+                      width: 30%;
+                      height: 40%;
+                      margin-top: 13%;
+                      display: inline-block;
+                    "
+                  ></i>
+                </div>
+              </div>
+              <!-- it will contain the name and date of release of the song -->
+              <div class="song-description">
+                <h3>
+                  Ghode Pe Sawar
+                </h3>
+                <p>
+                  Dec , 2022
+                </p>
+              </div>
+
+              <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+              <div class="options">
+                <label for="latest-release-checkbox">
+                  <i class="fas fa-ellipsis-h"></i
+                ></label>
+                <input type="checkbox" id="latest-release-checkbox" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single-Playlist-Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <!-- duration  of song -->
+                <p>3:35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- this is the popular artist section -->
+        <div class="popular-artist">
+          <!-- this is the heading of popular artist -->
+          <h1 style="margin-bottom: 12px;">
+            Popular Artists
+          </h1>
+          <!-- this div contains the popular artist section -->
+          <div class="popular-artist-content">
+            <!-- if user clicks on any one artist, it will redirect the user to the second page -->
+            <!-- following is the list of artists -->
+            <!-- first artist -->
+            <a href="Single-Playlist-Screen.html">
+              <div>
+                <img
+                  src="https://c.saavncdn.com/artists/Selena_Gomez_002_20200226073835_500x500.jpg"
+                />
+                <div><i class="fas fa-play"></i></div>
+                <p>
+                  Selena Gomez
+                </p>
+              </div>
+            </a>
+            <!-- second artist -->
+            <a href="Single-Playlist-Screen.html">
+              <div>
+                <img
+                  src="https://c.saavncdn.com/artists/Taylor_Swift_003_20200226074119_500x500.jpg"
+                />
+                <div><i class="fas fa-play"></i></div>
+                <p>
+                  Taylor Swift
+                </p>
+              </div>
+            </a>
+            <!-- third artist -->
+            <a href="Single-Playlist-Screen.html">
+              <div>
+                <img
+                  src="https://c.saavncdn.com/artists/Billie_Eilish_20190211151539_500x500.jpg"
+                />
+                <div><i class="fas fa-play"></i></div>
+                <p>
+                  Billie Eilish
+                </p>
+              </div>
+            </a>
+            <!-- fourth artist -->
+            <a href="Single-Playlist-Screen.html">
+              <div>
+                <img
+                  src="https://c.saavncdn.com/artists/Harry_Styles_500x500.jpg"
+                />
+                <div><i class="fas fa-play"></i></div>
+                <p>
+                  Harry Styles
+                </p>
+              </div>
+            </a>
+            <!-- fifth artist -->
+            <a href="Single-Playlist-Screen.html">
+              <div>
+                <img
+                  src="https://c.saavncdn.com/artists/Justin_Bieber_005_20201127112218_500x500.jpg"
+                />
+                <div><i class="fas fa-play"></i></div>
+                <p>
+                  Justin Bieber
+                </p>
+              </div>
+            </a>
+            <!-- sixth artist -->
+            <a href="Single-Playlist-Screen.html">
+              <div>
+                <img
+                  src="https://c.saavncdn.com/artists/Shawn_Mendes_500x500.jpg"
+                />
+                <div><i class="fas fa-play"></i></div>
+                <p>
+                  Shawn Mendes
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- this is the music themes part, the one with the tri-gradient background -->
+        <div class="music-themes">
+          <!-- this div will be the logo of music themes, see the output, the one with 3 squares/rects  -->
+          <!-- the logo with orange, green and yellow color -->
+          <div class="stations">
+            <div id="div1">
+              <div id="div2">
+                <div id="div3">
+                  <i class="fa fa-music" aria-hidden="true"></i>
+                  <p>Stations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- this is the content part of them themes -->
+          <!-- the one which changes colors on hover -->
+          <div class="theme-main">
+            <div class="theme-content">
+              <img
+                src="https://images.pexels.com/photos/3800507/pexels-photo-3800507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+              <p>Vibe</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+              <p>Rock</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://images.pexels.com/photos/843256/pexels-photo-843256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+              <p>Love</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://images.pexels.com/photos/5118496/pexels-photo-5118496.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+              <p>Pop</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://images.pexels.com/photos/1761362/pexels-photo-1761362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+              <p>Retro</p>
+            </div>
+            <div class="theme-content">
+              <img
+                src="https://images.pexels.com/photos/3854764/pexels-photo-3854764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+              <p>GYM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- this is another themes portion, that electronic, party and road theme -->
+        <div class="music-themes-2">
+          <!-- 3 divs content -->
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>party</span>
+            </div>
+          </div>
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>Electronic</span>
+            </div>
+          </div>
+          <div class="outer-div">
+            <div class="inner-div">
+              <span>Travel</span>
+            </div>
+          </div>
+        </div>
+        <!-- div over -->
+
+        <!-- this div contains the language section of the page -->
+        <!-- "language class is common to both hindi and english sections" -->
+        <!-- in this way redundancy is handled. considering the re-usability of the code -->
+        <div class="language english">
+          <!-- latest english section -->
+          <h1 class="language-heading">
+            Latest English
+          </h1>
+          <!-- contents of latest english -->
+          <div class="language-content">
+            <div>
+              <img
+                src="https://c.saavncdn.com/725/Unholy-English-2022-20220922233621-500x500.jpg"
+              />
+              <p>Unholy</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/793/Midnights-English-2022-20221021103611-500x500.jpg"
+              />
+              <p>Anti-Hero</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/740/Dancing-s-Done-English-2022-20221221035318-500x500.jpg"
+              />
+              <p>Dancing’s Done</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/328/LALISA-Korean-2021-20210910093950-500x500.jpg"
+              />
+              <p>MONEY</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/755/Chosen-English-2017-20171204141141-500x500.jpg"
+              />
+              <p>Beggin'</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/981/Faded-English-2015-500x500.jpg"
+              />
+              <p>Faded</p>
+              <p>Aug 11, 2017</p>
+            </div>
+          </div>
+        </div>
+        <!-- this is the hindi section -->
+        <div class="language hindi">
+          <!-- hindi section heading -->
+          <h1 class="language-heading">
+            Latest Hindi
+          </h1>
+          <!-- hindi section contents -->
+          <div class="language-content">
+            <div>
+              <img
+                src="https://c.saavncdn.com/807/Pathaan-Hindi-2022-20221222104158-500x500.jpg"
+              />
+              <p>Besharam Rang</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/191/Kesariya-From-Brahmastra-Hindi-2022-20220717092820-500x500.jpg"
+              />
+              <p>Kesariya</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/815/Bhediya-Hindi-2022-20221206124543-500x500.jpg"
+              />
+              <p>Thumkeshwari</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/399/Ijazzat-Hai-Hindi-2022-20220608175759-500x500.jpg"
+              />
+              <p>Ijazzat Hai</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/959/Thoda-Thoda-Pyaar-Hindi-2021-20210212084501-500x500.jpg"
+              />
+              <p>Thoda Thoda Pyaar</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div>
+              <img
+                src="https://c.saavncdn.com/238/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-500x500.jpg"
+              />
+              <p>Ranjha</p>
+              <p>Aug 11, 2017</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- section one ends here -->
+
+      <!-- now the second aside section will start from here -->
+      <!-- the page is responsive. please try reducing the width of the page -->
+      <!-- the aside section will collapse and a "more button will be shown to you." -->
+      <!-- clicking on this more button, you will be shown the aside section 2  -->
+      <!-- its position will be absolute at lower resolutions -->
+      <!-- this is the label for that more button -->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+      <!-- this is that more button -->
+      <!-- and this is the check box. this will always be hidden -->
+      <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+      <!-- which will invoke the aside section 2 on lower resolutions -->
+      <input type="checkbox" id="more" />
+      <!-- here starts the section 2 of our page -->
+      <aside class="aside section-2">
+        <!-- this is the section heading part. the heading will be static -->
+        <div class="heading">
+          <h1>Playlist</h1>
+          <h4>
+            <a href="#queue-option-box"
+              >Queue <i class="fas fa-chevron-circle-down"></i
+            ></a>
+          </h4>
+        </div>
+        <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+        <!-- it will have 3 options, playlists, favourite songs and Close button. it will close when one clicks on the close button. -->
+        <div class="queue-options" id="queue-option-box">
+          <p>
+            <a href style="color: #007bff; font-weight: bolder;">Playlists</a>
+          </p>
+          <hr />
+          <p>
+            <a href style="color: #007bff; font-weight: bolder;"
+              >Favourite songs</a
+            >
+          </p>
+          <hr />
+          <p><a href="#" style="color: red; font-weight: bolder;">Close</a></p>
+        </div>
+
+        <!-- this is the content of the playlist. it will be dynamic. -->
+        <div class="playlist-content">
+          <!-- first playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <!-- index -->
+              <div style="margin-right: 4px;">
+                01
+              </div>
+              <div class="coverer">
+                <!-- coverer class is for those items which when hovered will show an effect -->
+                <!-- in this effect, when the user hovers on the item, it will show black background -->
+                <!-- with opacity value less than 1 and a play button icon at the center -->
+                <img
+                  src="https://c.saavncdn.com/440/Qala-Music-From-The-Netflix-Film-Hindi-2022-20221218100455-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <div>
+                  Phero Na Najariya
+                </div>
+                <p>
+                  Sireesha Bhagavatula
+                </p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- second playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                02
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/712/Thank-God-Hindi-2022-20221022001002-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Manike
+                </div>
+                <p>
+                  Jubin Nautiyal
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- third playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                03
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/970/Kantara-Hindi-Hindi-2022-20221205161902-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Khawbon Mein
+                </div>
+                <p>
+                  B. Ajaneesh Loknath
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- fourth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                04
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/460/Pushpa-The-Rise-Part-01-Hindi-2021-20211216071001-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Srivalli
+                </div>
+                <p>
+                  Javed Ali
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- fifth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                05
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/544/Gangubai-Kathiawadi-Hindi-2022-20220217161339-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Meri Jaan
+                </div>
+                <p>
+                  Neeti Mohan
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- sixth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                06
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/408/Khuda-Haafiz-Chapter-2-Agni-Pariksha-Hindi-2022-20220629120022-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Aaja Ve
+                </div>
+                <p>
+                  Vishal Mishra
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- seventh playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <!-- index -->
+              <div style="margin-right: 4px;">
+                07
+              </div>
+              <div class="coverer">
+                <!-- coverer class is for those items which when hovered will show an effect -->
+                <!-- in this effect, when the user hovers on the item, it will show black background -->
+                <!-- with opacity value less than 1 and a play button icon at the center -->
+                <img
+                  src="https://c.saavncdn.com/440/Qala-Music-From-The-Netflix-Film-Hindi-2022-20221218100455-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <!-- name and author of the song -->
+              <div>
+                <div>
+                  Phero Na Najariya
+                </div>
+                <p>
+                  Sireesha Bhagavatula
+                </p>
+              </div>
+            </div>
+            <!-- like button -->
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- eighth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                08
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/712/Thank-God-Hindi-2022-20221022001002-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Manike
+                </div>
+                <p>
+                  Jubin Nautiyal
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- ninth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                09
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/970/Kantara-Hindi-Hindi-2022-20221205161902-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Khawbon Mein
+                </div>
+                <p>
+                  B. Ajaneesh Loknath
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- tenth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                10
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/460/Pushpa-The-Rise-Part-01-Hindi-2021-20211216071001-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Srivalli
+                </div>
+                <p>
+                  Javed Ali
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- eleventh playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                11
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/544/Gangubai-Kathiawadi-Hindi-2022-20220217161339-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Meri Jaan
+                </div>
+                <p>
+                  Neeti Mohan
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- twelth playlist item -->
+          <div class="playlist-item">
+            <div class="left-content">
+              <div style="margin-right: 4px;">
+                12
+              </div>
+              <div class="coverer">
+                <img
+                  src="https://c.saavncdn.com/408/Khuda-Haafiz-Chapter-2-Agni-Pariksha-Hindi-2022-20220629120022-500x500.jpg"
+                />
+                <div class="play-button">
+                  <i class="fas fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div>
+                <div>
+                  Aaja Ve
+                </div>
+                <p>
+                  Vishal Mishra
+                </p>
+              </div>
+            </div>
+            <div class="right-content">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- main part of the page is over. -->
+    <!-- this is the footer part. -->
+    <!-- its position will be fixed to the screen bottom. -->
+    <footer>
+      <div class="active-song-description">
+        <!-- song image -->
+        <div id="song-image">
+          <img
+            src="https://c.saavncdn.com/544/Gangubai-Kathiawadi-Hindi-2022-20220217161339-500x500.jpg"
+          />
+        </div>
+        <!-- song name and author -->
+        <div class="song-desc">
+          <div>
+            Meri Jaan
+          </div>
+          <div>
+            Neeti Mohan
+          </div>
+          <!-- heart icon and ban icon -->
+        </div>
+        <div class="heart-and-ban-icon">
+          <span>
+            <i class="far fa-heart"></i>
+          </span>
+          <span>
+            <i class="fas fa-ban"></i>
+          </span>
+        </div>
+      </div>
+      <!-- these are the main player controls -->
+      <div class="player">
+        <div class="controls">
+          <div><i class="fas fa-random"></i></div>
+          <div><i class="fas fa-step-backward"></i></div>
+          <div><i class="fas fa-pause-circle"></i></div>
+          <div><i class="fas fa-step-forward"></i></div>
+          <div><i class="fas fa-redo"></i></div>
+        </div>
+        <!-- this is the slider -->
+        <div id="slider">
+          <!-- current time -->
+          <div class="time">
+            1:39
+          </div>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <!-- total time -->
+          <div class="time">
+            4:44
+          </div>
+        </div>
+      </div>
+      <!-- other icons including the volume slider and all -->
+      <div class="extras">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%;">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="slider"
+            id="myRange"
+            style="margin-top: 0px;"
+          />
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
